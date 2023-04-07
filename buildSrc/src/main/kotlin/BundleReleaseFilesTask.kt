@@ -7,7 +7,7 @@ import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
 import java.io.File
 
-abstract class BundleReleaseFilesTask : DefaultTask() {
+internal abstract class BundleReleaseFilesTask : DefaultTask() {
 
     @get:InputDirectory
     abstract val rootProject: DirectoryProperty

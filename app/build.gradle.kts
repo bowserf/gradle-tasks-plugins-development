@@ -47,7 +47,6 @@ dependencies {
 }
 
 bundleReleaseFiles {
-    rootProject.set(File("."))
     appVersion.set("1.00.00")
     outputDirectory.set(File(".", "build/outputs"))
 }

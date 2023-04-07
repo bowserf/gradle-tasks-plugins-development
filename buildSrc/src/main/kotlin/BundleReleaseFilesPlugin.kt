@@ -1,5 +1,6 @@
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import java.io.File
 
 class BundleReleaseFilesPlugin : Plugin<Project> {
 
@@ -18,7 +19,7 @@ class BundleReleaseFilesPlugin : Plugin<Project> {
         }
         bundleReleaseFilesTask.configure {
             appVersion.set(extension.appVersion)
-            rootProject.set(extension.rootProject)
+            rootProject.set(target.projectDir)
             outputDirectory.set(extension.outputDirectory)
         }
     }
